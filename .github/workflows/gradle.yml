@@ -54,7 +54,7 @@ jobs:
     - name: Run JarTighten on built .jar files
       run: for file in ./mc-texture-gen-app/build/libs/*.jar; do java -jar ./ci-tools/JarTighten-1.2.11-all.jar -x -o -c -E -S -t -z -j --mode=MULTI_CHEAP --zopfli-iter=99 $file $file; done
     - name: Upload artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: Package
         path: mc-texture-gen-app/build/libs
