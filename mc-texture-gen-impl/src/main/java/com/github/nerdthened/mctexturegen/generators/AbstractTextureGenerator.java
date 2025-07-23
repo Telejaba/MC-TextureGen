@@ -24,7 +24,7 @@ public abstract class AbstractTextureGenerator {
     // Image size constants
 
     /** A convenience variable to generate larger textures. Must be a power of two, or one. */
-    static final int STANDARD_IMAGE_SIZE_MULTIPLIER = 1;
+    static final int STANDARD_IMAGE_SIZE_MULTIPLIER = 32;
 
     /** The size of a standard image in pixels. */
     static final int STANDARD_IMAGE_SIZE = 16 * STANDARD_IMAGE_SIZE_MULTIPLIER;
